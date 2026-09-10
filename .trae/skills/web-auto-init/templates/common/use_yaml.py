@@ -1,0 +1,8 @@
+import yaml
+
+
+class UseYaml:
+    @classmethod
+    def read_yaml(cls, file_path):
+        with open(file_path, "r", encoding="utf-8") as file:
+            return yaml.safe_load(file)
